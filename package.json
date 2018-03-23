@@ -1,0 +1,23 @@
+{
+  "name": "koa-swagger-mock",
+  "version": "1.0.0",
+  "description": "## Introduce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShanaMaid/koa-swagger-mock.git"
+  },
+  "author": "ShanaMaid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShanaMaid/koa-swagger-mock/issues"
+  },
+  "homepage": "https://github.com/ShanaMaid/koa-swagger-mock#readme",
+  "dependencies": {
+    "koa": "^2.5.0",
+    "swagmock": "^1.0.0"
+  }
+}
