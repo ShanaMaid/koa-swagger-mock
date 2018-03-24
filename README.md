@@ -2,6 +2,8 @@
 ## Introduce
 It's a middleware for swagger-mock!
 
+`npm run test` start test.js!
+
 ## Example
 ```
 const Koa = require('koa');
