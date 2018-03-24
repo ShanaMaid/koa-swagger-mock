@@ -2,13 +2,25 @@
 ## Introduce
 It's a middleware for swagger-mock!
 
-`npm run test` start test.js!
+preview this project, do this!
+```
+git clone https://github.com/ShanaMaid/koa-swagger-mock
+
+npm install
+
+npm run test
+
+url: localhost:3000/pet/1212121212
+```
+
+## Usage
+`npm install koa-swagger-mock -save`
 
 ## Example
 ```
 const Koa = require('koa');
 const app = new Koa();
-const KoaSwaggerMock = require('../lib/koa-swagger-mock');
+const KoaSwaggerMock = require('koa-swagger-mock');
 const path = require('path');
 
 
