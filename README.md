@@ -1,6 +1,6 @@
 # koa-swagger-mock
-[![build](https://img.shields.io/badge/npm-1.0.2-blue.svg)](https://github.com/ShanaMaid/koa-swagger-mock) 
-[![build](https://img.shields.io/npm/l/express.svg)](https://github.com/ShanaMaid/koa-swagger-mock)
+[![build](https://img.shields.io/npm/v/koa-swagger-mock.svg?style=flat-square)](https://www.npmjs.com/package/koa-swagger-mock) 
+[![build](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/koa-swagger-mock)
 [![download](https://img.shields.io/npm/dt/koa-swagger-mock.svg?style=flat-square)](https://www.npmjs.com/package/koa-swagger-mock)
 
 [![NPM](https://nodei.co/npm/koa-swagger-mock.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/koa-swagger-mock/)
