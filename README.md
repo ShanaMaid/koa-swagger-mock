@@ -32,10 +32,10 @@ app.listen(3000);
 ```
 this is mock resp!
 
-![mock resp]('./example/example.png')
+![mock resp](./example/example.png)
 
 ## API
-`KoaSwaggerMock({apiPath, outputFile, paths})`
+### `KoaSwaggerMock({apiPath, outputFile, paths})`
 
 * `api` - (*String*) - (required) - api can be one of the following.
     - A relative or absolute path to the Swagger api document.
@@ -44,7 +44,7 @@ this is mock resp!
 * `outputFile` - (*String*) - (optional) - Additional options to create the mock generator.
     -  A absolute path to output the backup of swagger.json
 
-### paths -(*Object*) - (optional)
+#### paths -(*Object*) - (optional)
 * `key` - (*Object*) - proxy path
     - `name` - (*String*) - (required)
     - `operation` - (*String*) - (required)
