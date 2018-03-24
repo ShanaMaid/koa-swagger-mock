@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ShanaMaid/koa-swagger-mock#readme",
   "dependencies": {
     "koa": "^2.5.0",
+    "koa-router": "^7.4.0",
     "swagmock": "^1.0.0"
   }
 }
