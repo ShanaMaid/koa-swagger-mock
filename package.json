@@ -1,8 +1,8 @@
 {
   "name": "koa-swagger-mock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "## Introduce",
-  "main": "index.js",
+  "main": "./lib/koa-swagger-mock.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
