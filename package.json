@@ -1,8 +1,16 @@
 {
   "name": "koa-swagger-mock",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "It's a middleware for swagger-mock!",
   "main": "./lib/koa-swagger-mock.js",
+  "keywords": [ 
+    "koa", 
+    "swagger", 
+    "mock", 
+    "mockjs", 
+    "middleware", 
+    "swagger-mock"
+   ], 
   "scripts": {
     "test": "node ./example/test.js"
   },
@@ -11,7 +19,7 @@
     "url": "git+https://github.com/ShanaMaid/koa-swagger-mock.git"
   },
   "author": "ShanaMaid",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ShanaMaid/koa-swagger-mock/issues"
   },
