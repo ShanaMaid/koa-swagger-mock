@@ -44,6 +44,7 @@ app.listen(3000);
 ```
 this is mock resp!
 
+`http://localhost:3000/api/pet/findByStatus`
 ![mock resp](./example/example.png)
 
 ## API
@@ -53,5 +54,3 @@ this is mock resp!
     - A Swagger JSON Object.
 
 * `prefix` - (*String*) - (optional) - url prefix.
-
-```
