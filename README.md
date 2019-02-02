@@ -15,7 +15,7 @@ npm install
 
 npm run test
 
-url: localhost:3000/pet/1212121212
+url: localhost:3000/api/pet/1212121212
 ```
 
 ## Usage
@@ -54,3 +54,4 @@ this is mock resp!
     - A Swagger JSON Object.
 
 * `prefix` - (*String*) - (optional) - url prefix.
+    - default is `''`
