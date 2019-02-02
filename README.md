@@ -25,25 +25,18 @@ url: localhost:3000/pet/1212121212
 ```
 const Koa = require('koa');
 const app = new Koa();
-const KoaSwaggerMock = require('koa-swagger-mock');
+const KoaSwaggerMock = require('../lib/koa-swagger-mock');
 const path = require('path');
+const fs = require('fs');
 
+
+const swagger = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, '../json/example.json'), {encoding: 'utf8'})
+);
 
 const koaSwagMock = KoaSwaggerMock({
-  apiPath: path.resolve(__dirname, '../json/example.json'),
-  outputFile: path.resolve(__dirname, '../json/beifen.json'),
-  paths: {
-    '/pet/findByStatus': {
-      name: 'responses',
-      operation: 'get',
-      response: 200
-    },
-    '/pet/:petId': {
-      name: 'responses',
-      operation: 'get',
-      response: 200
-    }
-  }
+  swagger,
+  prefix: '/api'
 });
 
 app.use(koaSwagMock.routes());
@@ -54,33 +47,11 @@ this is mock resp!
 ![mock resp](./example/example.png)
 
 ## API
-### `KoaSwaggerMock({apiPath, outputFile, paths})`
+### `KoaSwaggerMock({...params})`
 
-* `api` - (*String*) - (required) - api can be one of the following.
-    - A relative or absolute path to the Swagger api document.
-    - A URL of the Swagger api document.
+* `swagger` - (*Object*) - (required) - api can be one of the following.
+    - A Swagger JSON Object.
 
-* `outputFile` - (*String*) - (optional) - Additional options to create the mock generator.
-    -  A absolute path to output the backup of swagger.json
+* `prefix` - (*String*) - (optional) - url prefix.
 
-#### paths -(*Object*) - (optional)
-* `key` - (*Object*) - proxy path
-    - `name` - (*String*) - (required)
-    - `operation` - (*String*) - (required)
-    - `response` - (*Number*) - (required)
-
-eg:
-```
-paths: {
-    '/pet/findByStatus': {
-      name: 'responses',
-      operation: 'get',
-      response: 200
-    },
-    '/pet/:petId': {
-      name: 'responses',
-      operation: 'get',
-      response: 200
-    }
-  }
 ```
